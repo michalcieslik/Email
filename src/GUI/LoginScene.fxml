@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="GUI.LoginSceneController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+      <VBox fx:id="VboxId" prefHeight="400.0" prefWidth="220.0" spacing="20.0">
+         <children>
+            <Label fx:id="loginLabel" prefHeight="17.0" prefWidth="245.0" text="Login:" />
+            <TextField fx:id="loginTextField" onKeyTyped="#loginKeyPressed" promptText="Login" />
+            <Label fx:id="passwordLabel" prefHeight="17.0" prefWidth="217.0" text="Password:" />
+            <PasswordField fx:id="passwordTextField" promptText="Password" />
+            <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                    onAction="#loginClick" prefHeight="25.0" prefWidth="233.0" text="Login" textAlignment="CENTER" />
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerClick" prefHeight="25.0"
+                    prefWidth="232.0" style="-fx-background-color: #6495ed;" text="Register" textAlignment="CENTER" />
+            <Label fx:id="alertLabel" prefHeight="17.0" prefWidth="239.0" />
+
+         </children>
+      </VBox>
+      <Pane prefHeight="200.0" prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</HBox>

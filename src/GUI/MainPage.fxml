@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainPageController">
+   <top>
+      <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="74.0" prefWidth="600.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshButtonClick" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/refresh_icon.png');" />
+            <Button fx:id="newMailButton" mnemonicParsing="false" onAction="#newMailButtonClick" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/sendMail_icon.png');" />
+            <Button fx:id="deleteMailButton" mnemonicParsing="false" onAction="#deleteMailButtonClick" prefHeight="64.0" prefWidth="57.0" style="-fx-background-image: url('/GUI/img/deleteMail_icon.png');" />
+            <Button fx:id="changePasswordButton" mnemonicParsing="false" onAction="#changePasswordButtonClick" prefHeight="64.0" prefWidth="63.0" style="-fx-background-image: url('/GUI/img/changePass_icon.png');" />
+            <Button fx:id="logOotButton" mnemonicParsing="false" onAction="#logOotButtonClick" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/signOut_icon.png');" />
+            <Button fx:id="deleteAccountButton" mnemonicParsing="false" onAction="#deleteAccountButtonClick" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/deleteAcc_icon.png');" />
+            <VBox prefHeight="64.0" prefWidth="175.0" spacing="10.0">
+               <children>
+                  <Label fx:id="showingAccountLabel" alignment="CENTER" prefHeight="17.0" prefWidth="226.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="showingTimeLabel" alignment="CENTER" prefHeight="17.0" prefWidth="194.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
+   </top>
+   <left>
+      <VBox fx:id="listOfMailsView" prefHeight="360.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listView" editable="true" onMouseClicked="#listViewClicked" prefHeight="389.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children></VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="11.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="titleLabel" prefHeight="26.0" prefWidth="51.0" text="Title:" />
+                  <TextField fx:id="titleTextfield" editable="false" maxHeight="25.0" prefHeight="25.0" prefWidth="550.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="10.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="fromLabel" prefHeight="26.0" prefWidth="51.0" text="From:" />
+                  <TextField fx:id="fromTextfield" editable="false" maxHeight="25.0" prefHeight="25.0" prefWidth="550.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="6.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="toLabel" prefHeight="26.0" prefWidth="51.0" text="To:" />
+                  <TextField fx:id="toTextfield" editable="false" maxHeight="25.0" prefHeight="25.0" prefWidth="550.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="dateLabel" prefHeight="26.0" prefWidth="51.0" text="Date:" />
+                  <TextField fx:id="dateTextfield" editable="false" maxHeight="25.0" prefHeight="25.0" prefWidth="550.0" />
+               </children>
+            </HBox>
+            <TextArea fx:id="textAreaField" editable="false" prefHeight="365.0" prefWidth="400.0" wrapText="true" />
+         </children></VBox>
+   </center>
+</BorderPane>

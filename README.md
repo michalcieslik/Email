@@ -1,2 +1,2 @@
-# Email
-simple email
+# E-mail
+Simple e-mail

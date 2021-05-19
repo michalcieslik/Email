@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DeleteAccountAlertController">
+   <children>
+      <Label fx:id="warningLabel" prefHeight="17.0" prefWidth="393.0" text="Are you sure you want to delete your account?" />
+      <Label fx:id="passwordLabel" prefHeight="17.0" prefWidth="435.0" text="Password:" />
+      <PasswordField fx:id="passwordTextField" promptText="Password" />
+      <HBox prefHeight="35.0" prefWidth="290.0" spacing="10.0">
+         <children>
+            <Button fx:id="applyButton" mnemonicParsing="false" onAction="#applyButtonClick" prefHeight="25.0" prefWidth="140.0" text="Apply" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeButtonClick" prefHeight="25.0" prefWidth="140.0" text="Close" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="alertLabel" prefHeight="0.0" prefWidth="290.0" textFill="#f50000" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

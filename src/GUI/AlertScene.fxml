@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AlertController">
+   <children>
+      <Label fx:id="alertLabel" alignment="CENTER" prefHeight="40.0" prefWidth="290.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <HBox prefHeight="20.0" prefWidth="290.0">
+         <children>
+            <Pane prefHeight="20.0" prefWidth="75.0" />
+            <Button fx:id="okButton" alignment="CENTER" mnemonicParsing="false" onAction="#okButtonClick" prefHeight="20.0" prefWidth="140.0" text="Ok" textAlignment="CENTER" />
+            <Pane prefHeight="20.0" prefWidth="75.0" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

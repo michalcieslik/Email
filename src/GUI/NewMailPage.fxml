@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NewMailPageController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="74.0" spacing="5.0">
+         <children>
+            <Button fx:id="goBackButton" mnemonicParsing="false" onAction="#goBackButtonClicked" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/goBack_icon.png');" />
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/doIt_icon.png');" />
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOutButtonClicked" prefHeight="64.0" prefWidth="64.0" style="-fx-background-image: url('/GUI/img/signOut_icon.png');" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_RIGHT" prefHeight="400.0" prefWidth="581.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="16.0" prefWidth="552.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="100.0" text="From:" />
+                  <TextField fx:id="fromTextField" maxWidth="1000.0" prefHeight="25.0" prefWidth="452.0" HBox.hgrow="ALWAYS" />
+               </children></HBox>
+            <HBox prefHeight="13.0" prefWidth="552.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="100.0" text="To:" />
+                  <TextField fx:id="toTextField" maxWidth="1000.0" prefHeight="25.0" prefWidth="452.0" HBox.hgrow="ALWAYS" />
+               </children></HBox>
+            <HBox prefHeight="6.0" prefWidth="552.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="100.0" text="Title:" />
+                  <TextField fx:id="titleTextField" maxWidth="1000.0" prefWidth="452.0" HBox.hgrow="ALWAYS" />
+               </children></HBox>
+            <TextArea fx:id="textAreaField" prefHeight="325.0" prefWidth="723.0" wrapText="true" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
